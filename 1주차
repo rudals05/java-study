@@ -1,0 +1,48 @@
+#java study
+1주차 학습내용
+-Java 기본 구조
+-출력
+-변수와 자료형
+-연산자
+
+작성한 코드
+-자기소개 프로그램
+
+public class main
+{
+   
+    public static void main(String[] args)
+    {
+        String name ="박경민";
+        int age =22;
+        String school = "서강대학교";
+        String interest ="java";
+        String goal = "java study";
+        
+        System.out.println("이름:"+name);
+        System.out.println("나이:"+age);
+        System.out.println("학교:"+school);
+        System.out.println("흥미:"+interest);
+        System.out.println("목표:"+goal);
+    }
+}
+-점수계산 프로그램
+
+
+public class main{
+
+    public static void main(String[] args)
+    {
+       int Korean =80;
+       int English=90;
+       int math= 70;
+
+       int sum=Korean + English + math;
+       double avg=sum/3.0;
+
+        System.out.println("총점: "+sum);
+        System.out.println("평균: "+avg);
+
+    }
+}
+ 
