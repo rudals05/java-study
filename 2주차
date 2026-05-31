@@ -119,13 +119,179 @@
     }
 }
 
+  #day4 반복문 while/중첩 반복
+    #문제1 while문으로 1부터10까지 출력
+      public class Main{
+    public static void main(String[] args){
+        int i =1;
+        while(i<=10){
+            System.out.println(i);
+            i+=1;
+            
+        }
+    }
+}
+
+    #문제2 while문으로 1부터 10까지 합 출력
+      public class Main{
+    public static void main(String[] args){
+        int i =1;
+        int sum= 0;
+        
+        while(i<=10){
+            sum+=i;
+            i+=1;
+        }
+        System.out.println(sum);
+    }
+}
+
+    #문제3 별3개씩 3줄 출력;
+    public class Main{
+    public static void main(String[] args){
+        for(int i =1;i<=3;i++){
+            for(int j=1; j<=3; j++){
+                System.out.print("*");
+            }
+            if(i<=2){
+                System.out.println();
+            }
+            
+        }
+        
+        
+        
+    }
+}
+
+    #문제4 구구단 2단~4단 출력
+      public class Main{
+    public static void main(String[] args){
+        for(int i =2;i<=4; i++){
+            for(int j=1; j<=9;j++){
+                System.out.print(i*j+" ");
+            }
+            System.out.println();
+        }
+       
+            
+        
+        
+        
+        
+    }
+}
+  #day5 문제풀이
+    문제a 숫자 하나를 두고 짝홀 판별
+      public class Main{
+    public static void main(String[] args){
+        int num=7344;
+        if(num%2==0){
+            System.out.println("짝수");
+        }
+        else{
+            System.out.println("홀수");
+            
+        }
+            
+        
+        
+        
+        
+    }
+}
+    문제b 점수 하나를 두고 등급 출력 
+      public class Main{
+    public static void main(String[] args){
+        int score =77;
+        if(score>=90){
+            System.out.println("A");
+        }
+        else if(score>=80 && score<90){
+            System.out.println("B");
+        }
+        else if(score>=70 && score<80){
+            System.out.println("C");
+        }
+        else{
+            System.out.println("F");
+        }
+        
+        
+        
+        
+    }
+}  
+
+    문제 C 1~50까지 3의배수만 출력
+
+      public class Main{
+    public static void main(String[] args){
+        for(int i =1; i<=50; i++){
+            if(i%3==0){
+                System.out.print(i+" ");
+            }
+        }
+        
+        
+        
+        
+    }
+}
+
+    문제 D 1~100까지 숫자중 짝수 합 구하기
+        public class Main{
+    public static void main(String[] args){
+        int sum=0;
+        for (int i =1; i<=100; i++){
+            if(i%2==0){
+                sum+=i;
+            }
+        }
+        System.out.println(sum);
+        
+    }
+}
+    문제E 구구단 2단 출력
+      public class Main{
+    public static void main(String[] args){
+        for(int i =1; i<=9 ; i++){
+            System.out.println(2*i);
+        }
+        
+    }
+}
+    문제F 1~10까지 7이상만 출력
+      public class Main{
+    public static void main(String[] args){
+        for(int i =1; i<=10 ; i++){
+            if(i>=7){
+                System.out.println(i);
+            }
+        }
+        
+    }
+}
 
 
-
-
-
-
-
+    문제G 숫자 하나를 두고 1부터 그숫자까지 홀수 짝수 개수 세기
+        public class Main{
+    public static void main(String[] args){
+        int num=25;
+        int OddCnt=0;
+        int EvenCnt=0;
+        for(int i =1 ; i<=num ;i++){
+            if(i%2==1){
+                OddCnt++;
+            }
+            else{
+                EvenCnt++;
+            }
+        }
+        System.out.println("홀수의 개수: "+OddCnt);
+        System.out.println("짝수의 개수: "+EvenCnt);
+    }
+}
 
 
 
