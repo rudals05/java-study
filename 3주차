@@ -1,0 +1,32 @@
+#day1 메서드 기본
+  #문제 1 printName() 만들고 이름 출력
+    public class Main{
+    public static void printName(){
+        System.out.println("박경민");
+    }
+    public static void main(String[] args){
+        printName();
+    }
+}
+  #문제 2 printSchool() 만들고 학교 출력
+    public class Main{
+    public static void printSchool(){
+        System.out.println("Sogang University");
+    }
+    
+    public static void main(String args[]){
+        printSchool();
+        
+    }
+}
+  #문제 3 printGoal() 만들고 목표 한 줄 출력
+    public class Main{
+    public static void printGoal(){
+        System.out.println("자바 매일 공부하기");
+    }
+    
+    public static void main(String args[]){
+        printGoal();
+        
+    }
+}
