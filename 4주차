@@ -1,0 +1,68 @@
+#day 1 클래스 객체 기본
+  #문제 1 Student 클래스 만들기
+  #문제 2 Book 클래스 만들기
+    class Student {
+    String name;
+    int age;
+}
+class Book{
+    String title;
+    int price;
+}
+public class Main{
+    public static void main(String[] args){
+        Student s1= new Student();
+        Book b1 =new Book();
+        s1.name ="kim";
+        s1.age=20;
+        b1.title="경민";
+        b1.price=999;
+        System.out.println(s1.name);
+        System.out.println(s1.age);
+        System.out.println(b1.title);
+        System.out.println(b1.price);
+    
+    }
+}
+
+#day 2 필드와 메서드
+  #문제 1 Book 클래스에 printInfo() 메서드 추가 이름 저자 가격 출력
+    class Book {
+    String title;
+    int price;
+    String author;
+    
+    void printInfo(){
+        System.out.println("제목은: "+title+" 저자는: "+author+" 가격은: "+price);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Book b1 =new Book();
+        b1.title="경민의 자바일지";
+        b1.price=777;
+        b1.author="박경민";
+        b1.printInfo();
+    }
+}
+  #문제 2 GameCharacter 클래스에 showStatus() 메서드 추가 이름 직업 레벨 출력
+    class GameCharacter{
+    String name;
+    String job;
+    int level;
+    
+    void showStatus(){
+        System.out.println("이름은: "+name+" 직업은 : "+job+" 레벨은: "+level);
+    }
+}
+
+public class Main{
+    public static void main(String[] args){
+        GameCharacter ch1=new GameCharacter();
+        ch1.name="경민이다";
+        ch1.job="마법사";
+        ch1.level=77;
+        ch1.showStatus();
+    }
+}
+    
