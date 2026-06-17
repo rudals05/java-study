@@ -64,5 +64,110 @@ public class Main{
         ch1.level=77;
         ch1.showStatus();
     }
-}
+
+
+#day 3 생성자
+  #문제 1 book 클래스 생성자 만들기 제목 저자 가격
+    class Book{
+    String title;
+    String author;
+    int price;
     
+    Book(String title,String author,int price){
+        this.title=title;
+        this.author=author;
+        this.price=price;
+    }
+    
+    void introduce(){
+        System.out.println(title+" "+author+" "+price);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Book b1 =new Book("어린왕자","생택쥐페리",5000);
+        
+        b1.introduce();
+    }
+}
+
+  #문제 2 GameCharacter 클래스 생성자 만들기 이름 직업 레벨
+    class GameCharacter{
+    String name;
+    String job;
+    int level;
+    
+    GameCharacter(String name,String job,int level){
+        this.name=name;
+        this.job=job;
+        this.level=level;
+    }
+    void introduce(){
+        System.out.println(name+" "+job+" "+level);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        GameCharacter c1=new GameCharacter("박경민","마법사",55);
+        c1.introduce();
+        
+    }
+}
+
+#day4 객체 활용
+  #문제 1 Book객체 3개 만들고  printinfo() 호출
+    class Book{
+    String title;
+    String author;
+    int price;
+    
+    Book(String title,String author,int price){
+        this.title=title;
+        this.author=author;
+        this.price=price;
+    }
+    
+    void printInfo(){
+        System.out.println(title+" "+author+" "+price);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Book b1 =new Book("어린왕자","생택쥐페리",5000);
+        Book b2= new Book("해리포터","jk롤링",8000);
+        Book b3= new Book("데미안","헤르만 헤세",4000);
+        b1.printInfo();
+        b2.printInfo();
+        b3.printInfo();
+    }
+}
+  #문제 2 객체 배열 해보기
+    예:
+    Student[] students ={ 
+      new Student("kim",20),new Student("Lee",21)
+    };
+
+        class Student{
+    String name;
+    int age;
+    
+    Student(String name, int age){
+        this.name = name;
+        this.age=age;
+    }
+    
+    void introduce(){
+        System.out.println(name+" "+age);
+    }
+}
+public class Main{
+    public static void main(String[] args){
+        Student[] students ={ 
+            new Student("kim",20),new Student("Lee",21)};
+            
+        for(int i=0;i<students.length;i++){
+            students[i].introduce();
+        }
+    }
+}
+
